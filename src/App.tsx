@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Container from './components/Container';
 import NavBar from './pages/NavBar';
@@ -11,9 +11,28 @@ import Testimonials from './pages/Testimonials';
 import Footer from './pages/Footer'
 
 function App() {
+
+  useEffect(() => {
+    const setLightTheme = () => {
+      localStorage.theme = 'dark';
+    document.documentElement.classList.remove('dark');
+    document.documentElement.classList.add('light');
+    }
+
+    const setDarkTheme = () => {
+      localStorage.theme = 'dark';
+    document.documentElement.classList.remove('light');
+    document.documentElement.classList.add('dark');
+    }
+
+    setDarkTheme()
+    
+  },[])
+
   return (
-    <>
-      <div className='grid gap-24'>
+    <div>
+      <div className='grid gap-24 bg-white dark:bg-black
+      text-black dark:text-white'>
         <Container>
           <NavBar />
         </Container>
@@ -35,17 +54,17 @@ function App() {
         <Container>
           <Contact />
         </Container>
-        <div className='bg-light-gray'>
+        <div className='bg-light-gray dark:bg-black'>
           <Container>
             <Footer />
           </Container>
         </div>
 
       </div>
-      <div className='bg-dark-gray py-3 text-center text-white font-poppins font-light'>
+      <div className='bg-dark-gray dark:bg-black-gray py-3 text-center text-white font-poppins font-light'>
         © 2023 <span className='text-orange font-semibold'>Muhammad</span> All Rights Reserved , Inc.
       </div>
-    </>
+    </div>
   );
 }
 

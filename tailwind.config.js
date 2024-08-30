@@ -1,15 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,ts,tsx}"],
+  darkMode: 'class',
   theme: {
     extend: {
       colors:{
         'orange': '#FD6F00',
-        'white': '#FFFFFF',
+        'white': '#FBFBFB',
 
         'light-gray': '#EDECEC',
         'gray': '#F3F3F3',
         'dark-gray': '#545454',
+        'black-gray': '#121212'
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
@@ -20,10 +22,15 @@ module.exports = {
         'home-image': "url('./assets/header-image.png')",
         'about-image': "url('./assets/about-image.png')",
 
-        'facebook-negative': "url('./assets/social/Facebook_Negative.png')",
-        'instagram-negative': "url('./assets/social/Instagram_Negative.png')",
-        'linkedin-negative': "url('./assets/social/LinkedIn_Negative.png')",
-        'twitter-negative': "url('./assets/social/Twitter_Negative.png')",
+        'facebook-light': "url('./assets/social/lightTheme/Facebook_Negative.png')",
+        'instagram-light': "url('./assets/social/lightTheme/Instagram_Negative.png')",
+        'linkedin-light': "url('./assets/social/lightTheme/LinkedIn_Negative.png')",
+        'twitter-light': "url('./assets/social/lightTheme/Twitter_Negative.png')",
+
+        'facebook-dark': "url('./assets/social/darkTheme/Facebook_Negative.png')",
+        'instagram-dark': "url('./assets/social/darkTheme/Instagram_Negative.png')",
+        'linkedin-dark': "url('./assets/social/darkTheme/LinkedIn_Negative.png')",
+        'twitter-dark': "url('./assets/social/darkTheme/Twitter_Negative.png')",
 
         'range-app': "url('./assets/ranges/app.png')",
         'range-graphic': "url('./assets/ranges/graphic.png')",
