@@ -1,3 +1,7 @@
+import Carousel from "../components/Carousel"
+import CarouselCard from "../components/CarouselCard"
+
+import userImage from '../assets/user.png'
 
 const Testimonials = () => {
     return (
@@ -10,6 +14,41 @@ const Testimonials = () => {
                 convallis blandit felis ligula aliquam venenatis
                 fghh hgjj nisi ante.
             </div>
+            <Carousel>
+                <CarouselCard
+                    text='Lorem ipsum dolor sit amet consectetur.
+                 Id purus placerat scelerisque ullamcorper 
+                 habitasse egestas.Nunc gravida egestas 
+                 suspendisse volutpat suscipit suspendisse 
+                 faucibus amet convallis.'
+                    name='CEO'
+                    url={userImage} />
+                <CarouselCard
+                    text='Lorem ipsum dolor sit amet consectetur.
+                 Id purus placerat scelerisque ullamcorper 
+                 habitasse egestas.Nunc gravida egestas 
+                 suspendisse volutpat suscipit suspendisse 
+                 faucibus amet convallis.'
+                    name='CEO'
+                    url={userImage} />
+                <CarouselCard
+                    text='Lorem ipsum dolor sit amet consectetur.
+                 Id purus placerat scelerisque ullamcorper 
+                 habitasse egestas.Nunc gravida egestas 
+                 suspendisse volutpat suscipit suspendisse 
+                 faucibus amet convallis.'
+                    name='CEO'
+                    url={userImage} />
+                <CarouselCard
+                    text='Lorem ipsum dolor sit amet consectetur.
+                 Id purus placerat scelerisque ullamcorper 
+                 habitasse egestas.Nunc gravida egestas 
+                 suspendisse volutpat suscipit suspendisse 
+                 faucibus amet convallis.'
+                    name='CEO'
+                    url={userImage} />
+
+            </Carousel>
         </div>
     )
 }

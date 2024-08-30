@@ -12,23 +12,6 @@ import Footer from './pages/Footer'
 
 function App() {
 
-  useEffect(() => {
-    const setLightTheme = () => {
-      localStorage.theme = 'dark';
-    document.documentElement.classList.remove('dark');
-    document.documentElement.classList.add('light');
-    }
-
-    const setDarkTheme = () => {
-      localStorage.theme = 'dark';
-    document.documentElement.classList.remove('light');
-    document.documentElement.classList.add('dark');
-    }
-
-    setDarkTheme()
-    
-  },[])
-
   return (
     <div>
       <div className='grid gap-24 bg-white dark:bg-black
@@ -48,9 +31,7 @@ function App() {
         <Container>
           <Projects />
         </Container>
-        <Container>
-          <Testimonials />
-        </Container>
+        <Testimonials />
         <Container>
           <Contact />
         </Container>

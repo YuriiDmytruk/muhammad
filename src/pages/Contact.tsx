@@ -17,7 +17,7 @@ const Contact = () => {
                     placeholder="Enter You Email"
                     type='text'
                     className='bg-light-gray w-full h-full rounded-lg py-2 pl-5
-                    border-1 border-gray' />
+                    border-1 border-gray text-black' />
                 <button
                     onClick={handleClick}
                     className='bg-orange text-white rounded-md px-2 py-1 text-md font-light'
