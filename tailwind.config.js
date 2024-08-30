@@ -6,13 +6,17 @@ module.exports = {
       colors:{
         'orange': '#FD6F00',
         'white': '#FFFFFF',
+
         'light-gray': '#EDECEC',
         'gray': '#F3F3F3',
+        'dark-gray': '#545454',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
       backgroundImage: {
+        'logo': "url('./assets/Logo.png')",
+
         'home-image': "url('./assets/header-image.png')",
         'about-image': "url('./assets/about-image.png')",
 

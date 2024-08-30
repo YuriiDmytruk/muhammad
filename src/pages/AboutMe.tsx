@@ -1,7 +1,7 @@
 
 const AboutMe = () => {
     return (
-        <div className='grid grid-cols-2 mt-24'>
+        <div className='grid grid-cols-2'>
             <div className='bg-about-image bg-contain bg-left bg-no-repeat' />
             <div className='grid grid-rows-[auto_auto_auto] gap-7'>
                 <div className='font-semibold text-6xl'>About Me</div>

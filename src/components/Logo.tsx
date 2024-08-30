@@ -3,8 +3,8 @@ import logoImage from '../assets/Logo.png'
 
 const Logo = () => {
     return (
-        <div className='w-[50%] h-[50]'>
-            <img src={logoImage} alt='logo'/>
+        <div className='w-full h-full'>
+            <img src={logoImage} alt='logo' className='object-cover'/>
         </div>
     )
 }

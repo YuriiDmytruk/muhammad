@@ -1,13 +1,17 @@
+interface MenuProps {
+    position: string;
+}
 
-const Menu = () => {
+
+const Menu: React.FC<MenuProps> = ({ position }) => {
     return (
-        <div className='w-full flex gap-7 font-light justify-end text-md' >
+        <div className={`w-full flex gap-7 font-light justify-${position} text-md`} >
             <div>Home</div>
             <div>About</div>
             <div>Services</div>
             <div>Projects</div>
             <div>Testimonials</div>
-            <div>Contact Us</div>
+            <div>ContactUs</div>
         </div>
     )
 }

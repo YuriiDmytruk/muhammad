@@ -4,7 +4,7 @@ import Socials from '../components/Socials'
 
 const Header = () => {
     return (
-        <div className='grid grid-rows-[1fr_auto] grid-cols-2 mt-24'>
+        <div className='grid grid-rows-[1fr_auto] grid-cols-2'>
             <div className='font-semibold my-20 w-[80%] mx-auto'>
                 <div className='text-lg'>Hi I am</div>
                 <div className='text-orange text-3xl mt-2'>Mahammad Bin Jameel</div>

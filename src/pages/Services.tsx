@@ -2,9 +2,9 @@ import ServiceCard from "../components/ServiceCard"
 
 const Services = () => {
     return (
-        <div className='mt-24 grid gap-8'>
+        <div className='grid gap-8'>
             <div className='text-6xl font-semibold text-center'>Services</div>
-            <div className='text-md text-center'>Lorem ipsum dolor sit amet consectetur.
+            <div className='text-md text-center w-[70%] mx-auto'>Lorem ipsum dolor sit amet consectetur.
                 Imperdiet convallis blandit felis ligula
                 aliquam venenatis fghh hgjj nisi ante.
             </div>

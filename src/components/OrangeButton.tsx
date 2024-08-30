@@ -9,7 +9,7 @@ const OrangeButton: React.FC<OrangeButtonProps> = ({ text, onClick }) => {
     return (
         <button 
             onClick={onClick}
-            className='bg-orange text-white rounded-md px-2 py-1 text-md font-light w-full'
+            className='bg-orange text-white rounded-md px-2 py-1 text-md font-light'
         >
             {text}
         </button>
